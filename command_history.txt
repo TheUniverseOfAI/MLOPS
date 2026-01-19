@@ -1,0 +1,67 @@
+    1  https://github.com/muhannedalogaidiedu/Python.git
+    2  git clone https://github.com/muhannedalogaidiedu/Python.git
+    3  git clone https://github.com/muhannedalogaidiedu/MachineLearning.git
+    4  code .
+    5      git init
+    6      git add .
+    7      git commit -m "Initial commit"
+    8      git remote add origin <https://github.com/muhannedalogaidiedu/mernprod.git>
+    9      git remote add origin https://github.com/muhannedalogaidiedu/mernprod.git>
+   10  git remote add origin https://github.com/muhannedalogaidiedu/mernprod.git
+   11  git remote -v
+   12  git clone https://github.com/muhannedalogaidiedu/PromptEngineering.git
+   13  git clone https://github.com/muhannedalogaidiedu/PromptEngineering.git
+   14  git status
+   15  cls
+   16  clear
+   17  git clone https://github.com/muhannedalogaidiedu/PromptEngineering.git
+   18  git init
+   19  git --version
+   20  ls
+   21  git status
+   22  mkdir backend
+   23  mkdir frontend
+   24  mkdir datasets
+   25  mkdir materials
+   26  code 
+   27  git clone https://github.com/sourangshupal/simple-rag-langchain.git
+   28  git clone https://github.com/TheUniverseOfAI/AI4Free.git
+   29  git clone https://github.com/TheUniverseOfAI/AI4Free.git
+   30  git clone https://github.com/TheUniverseOfAI/AI4Free.git .
+   31  git clone https://github.com/TheUniverseOfAI/AI4Free.git
+   32  https://github.com/TheUniverseOfAI/AI4Free.git
+   33  git clone https://github.com/TheUniverseOfAI/AI4Free.git
+   34  git clone https://github.com/TheUniverseOfAI/AI4Free.git
+   35  ssh-keygen -t ed25519 -C "alogaidimuhanned@gmail.com"
+   36  cat ~/.ssh/id_ed25519.pub
+   37  git clone https://github.com/TheUniverseOfAI/AI4Free.git
+   38  coe .
+   39  code .
+   40  git clone https://github.com/Sourangshu-Pal/document-parsers-rag.git
+   41  git clone https://github.com/sourangshupal/rag-qa-project.git
+   42  git clone https://github.com/sourangshupal/llama-index-tutorials
+   43  git clone https://github.com/sourangshupal/chonkie-chunkers-tutorials.git
+   44  uv venv projectpro38 --python 3.8
+   45  source projectpro38/Scripts/activate
+   46  deactivat
+   47  deactivate
+   48  uv venv projectpro39 --python 3.9
+   49  uv venv .projectpro38 --python 3.8
+   50  source .projectpro38/Scripts/activate
+   51  deactivate
+   52  uv venv .projectpro39 --python 3.9
+   53  source .projectpro39/Scripts/activate
+   54  uv venv .projectpro310--python 3.10
+   55  uv venv .projectpro310 --python 3.10
+   56  source .projectpro310/Scripts/activate
+   57  uv venv .projectpro311 --python 3.11
+   58  source .projectpro311/Scripts/activate
+   59  deactivate
+   60  uv venv .projectpro312 --python 3.12
+   61  source .projectpro312/Scripts/activate
+   62  deactivate
+   63  uv venv .projectpro313 --python 3.13
+   64  source .projectpro313/Scripts/activate
+   65  source .projectpro312/Scripts/activate
+   66  uv pip install ipykernel
+   67  history > command_history.txt
