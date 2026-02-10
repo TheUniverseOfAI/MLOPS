@@ -1,0 +1,494 @@
+<div class="tab-content" style="margin-bottom: 50px;">
+								<div role="tabpanel" class="tab-pane active" id="project-details-tab">
+
+									<p class="project-sub-description">
+										Develop a customer churn prediction model using decision tree machine learning algorithms and data science on  streaming service data.									</p>
+
+									<p class="what-will-you-learn">
+										What will you learn?
+									</p>
+
+									<div class="what-will-you-learn-block">
+									
+																					<ul class="list-disc what-will-you-learn-list">
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Introduction to decision trees</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Understanding the measures of impurity</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Understanding the working of the decision tree algorithm</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">What is Classification and Regression Trees (CART)</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">What is the C5.0 algorithm and CHAID algorithm</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Comparing the types of decision trees w.r.t measures of impurity</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Using python libraries such as matplotlib for data interpretation and advanced visualizations.</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Data inspection and cleaning</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Using sklearn library to build the decision tree model</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Splitting Dataset into Train and Test using sklearn.</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Making predictions using the trained model.</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Gaining confidence in the model using metrics such as accuracy score, confusion matrix, recall, precision, and f1 score</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Handling the unbalanced data using SMOTE method.</span>
+													</li>
+													
+												
+													<li class="set-orange what-will-you-learn-list-item" style="display: list-item;">
+														<span class="text-black">Performing feature importance.</span>
+													</li>
+													
+																							<li class="set-orange what-will-you-learn-list-item list-style-none view-more-items" style="display: none;"><span class="text-blue f-5 cursor-pointer">View more details</span></li></ul>
+										
+									</div>
+
+
+									<p class="project-block-description">Project Description</p>
+									<div class="project-block-description-detail">
+										<p style="text-align: center; line-height: 115%; margin: 0cm 0cm 8pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 12pt; line-height: 115%; font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong>Business Objective </strong></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">A Decision Tree is a Supervised learning technique that can be used for both classification and regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules, and each leaf node represents the outcome.</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">It is a graphical representation of all possible solutions to a problem/decision based on given conditions. It is called a decision tree because similar to a tree, it starts with the root node, which expands on further branches and constructs a tree-like structure. A decision tree asks a question and based on the answer (Yes/No), it further splits the tree into subtrees.</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">In our case study, we will be working on a churn dataset. Churned Customers are those who have decided to end their relationship with their existing company.</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">XYZ is a service-providing company that provides customers with a one-year subscription plan for their product. The company wants to know if the customers will renew the subscription for the coming year or not.</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">We have already seen how the logistics regression model works on this dataset. It is advised to check this project first, <a href="../../../project-use-case/churn-analysis-logistic-regression" target="_blank" rel="noopener">Build a Logistic Regression Model in Python from Scratch</a></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">In this project, we will try to fit the decision tree classifier on the given dataset.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong>Data Description&nbsp;</strong></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">This data provides information about a video streaming service&nbsp;company, where they want to predict if the customer will churn or not. The CSV consists of around 2000 rows and 16 columns</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong>Aim</strong></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">Build a decision tree model on the given dataset to determine whether the customer will churn or not.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong>Tech stack </strong></span></p>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;">Language - Python</span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">Libraries - NumPy, pandas, matplotlib, sklearn, pickle, imblearn</span></li>
+</ul>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong>&nbsp;</strong></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong>Approach </strong></span></p>
+<ol>
+<li><span style="font-family: arial, helvetica, sans-serif;">Importing the required libraries and reading the dataset.</span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">Feature Engineering</span></li>
+</ol>
+<ul>
+<li style="list-style-type: none;">
+<ul style="list-style-type: square;">
+<li><span style="font-family: arial, helvetica, sans-serif;">Dropping of unwanted columns</span></li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li><span style="font-family: arial, helvetica, sans-serif;">Model Building</span></li>
+</ol>
+<ul>
+<li style="list-style-type: none;">
+<ul style="list-style-type: square;">
+<li><span style="font-family: arial, helvetica, sans-serif;">Performing train test split</span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">Decision tree Model</span></li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li><span style="font-family: arial, helvetica, sans-serif;">Model Validation (predictions)</span></li>
+</ol>
+<ul>
+<li style="list-style-type: none;">
+<ul style="list-style-type: square;">
+<li><span style="font-family: arial, helvetica, sans-serif;">Accuracy score</span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">Confusion matrix</span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">ROC and AUC</span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">Recall score</span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">Precision score</span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">F1-score</span></li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li><span style="font-family: arial, helvetica, sans-serif;">Feature Importance</span></li>
+</ol>
+<ul>
+<li style="list-style-type: none;">
+<ul style="list-style-type: square;">
+<li><span style="font-family: arial, helvetica, sans-serif;">Create a function to find important features</span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">Plot the features</span></li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;">Architecture Diagram</span></strong></p>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><img class="img-fluid gm-loaded gm-observing gm-observing-cb" width="963" height="987" data-src="https://d2eofpjy20wlpd.cloudfront.net/customer-churn-prediction-using-machine-learning-decision-trees/images/Group_2643.png" loading="lazy" src="https://projex.gumlet.io/customer-churn-prediction-using-machine-learning-decision-trees/images/Group_2643.png?w=1500&amp;dpr=1.0"></span></strong></p><div id="template-keyword"></div><div id="template-paragraph"></div>									</div>
+
+								</div>
+
+
+								<div role="tabpanel" class="tab-pane" id="your-notes-tab">
+
+									
+
+									<div class="row" id="notesRow" style="transform: translateY(-35px);">
+						
+										<div class="col-lg-12" id="displayVideoNotes" style="display: block;">
+											
+											<div class="col-12 justify-content-end" id="lecture-note-parent">
+												<select id="notesSelector" onchange="checkSelectOptions(this)">
+													<option value="opt1">All Notes</option>
+													<option class="current-notes-option" selected="" value="opt2" style="display: block;">Current Lecture Notes</option>
+												</select>
+											</div>	
+																				
+											<div class="col-12">
+												<ul id="allNotesList">
+													 
+													
+
+
+														
+														<div class="d-flex justify-content-center align-items-center flex-direction-column  no-notes-div-on-request" style="margin-top:20px;">
+
+															<img data-src="https://s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/no-notes.svg" width="171" height="194" loading="lazy" src="https://dezyre.gumlet.io/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/no-notes.svg?w=1500&amp;dpr=1.0" class="gm-loaded gm-observing gm-observing-cb">
+															<p style="font-size:24px;">No notes available</p>
+
+														</div>
+
+
+												</ul>
+											</div>	
+
+
+										</div>	
+									</div>	
+								</div>				
+
+
+
+
+								<div role="tabpanel" class="tab-pane" id="questions-answers-tab">
+							
+
+									<div class="row" id="qnaRow" style="display: none;">
+										<div class="col-12 d-flex justify-content-between gap-5" id="searchQuestionsDiv">
+											<div class="d-flex qna-fixed-width">
+
+												<input type="text" autocomplete="off" name="searchquestions" id="searchquestions" placeholder="search question you want to ask">
+												<button style="width:200px;" class="cta-button">Search</button>
+
+											</div>
+											<div>
+												<select class="select-padding" onchange="lectureOnChange(this)" name="questionlocation" id="questionlocation">
+													<option value="Project" selected="">All videos</option>
+													<option class="current-video-option" value="Lecture" style="display: block;">Current video</option>
+												</select>
+											</div>
+											
+										</div>
+
+
+										<div id="addNewQuestion" style="visibility: visible; margin-bottom: revert;">
+
+											<p onclick="addNewQuestion()" style="margin: 30px 0px;" class="cursor-pointer"> <img data-src="https://s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/ask-your-question.svg" loading="lazy" src="https://dezyre.gumlet.io/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/ask-your-question.svg?w=1500&amp;dpr=1.0" class="gm-loaded gm-observing gm-observing-cb"> <span class="ask-your-question" style="color: #184CD1;margin-left:5px;"> Ask your question </span> </p>
+
+										</div>
+
+
+										<div class="col-12" id="displayQuestions">
+											<p class="d-none" id="allQuestionsPretext">All Questions in this <span id="questionLocationText">Project</span></p>
+											<div id="noQuestionsFound" style="display:none;">
+												<p><b>No Results at the moment</b></p>
+											</div>
+
+											<div class="col-12">
+												<ul id="allQuestionsList">
+													
+												</ul>
+											</div>
+										</div>
+
+									
+										<div id="showMoreQuestions" style="display:none;">
+											<button class="load-more-qna-btn" onclick="loadMoreQuestions()">Load More Questions</button>
+										</div>
+
+
+									</div>
+									
+									<div class="col-12" id="addNewQuestionFormDiv" style="display:none;">
+										<a onclick="backToQuestions()" class="backToQuestions text-custom-blue cursor-pointer">
+											<img height="22" width="22" data-src="https://s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/arrow-left-circle.svg" loading="lazy" src="https://dezyre.gumlet.io/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/arrow-left-circle.svg?w=1500&amp;dpr=1.0" class="gm-loaded gm-observing gm-observing-cb">
+											Back To All Questions
+										</a>
+										<form id="addNewQuestionForm" class="qna-fixed-width">
+
+											<div class="topic-form-container">
+												<h2>What kind of topic are you creating?</h2>
+												<div class="option-group">
+												<label class="topic-option tooltip-container">
+													<input value="T" type="radio" name="topic-type">
+													<div class="topic-content">
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+														<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"></path>
+													</svg>
+													<div class="text">Conceptual Queries </div>	
+													<div class="tooltip">
+														Questions about understanding concepts. e.g. "What is overfitting in machine learning?"
+													</div>
+													<div class="indicator"></div>
+													</div>
+												</label>
+												<label class="topic-option tooltip-container">
+													<input value="C" type="radio" name="topic-type">
+													<div class="topic-content">
+													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 24 24">
+													<path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM10.13 14.5C10.42 14.79 10.42 15.27 10.13 15.56C9.98 15.71 9.79 15.78 9.6 15.78C9.41 15.78 9.22 15.71 9.07 15.56L6.58 13.07C5.99 12.48 5.99 11.53 6.58 10.94L9.07 8.45C9.36 8.16 9.84 8.16 10.13 8.45C10.42 8.74 10.42 9.22 10.13 9.51L7.64 12L10.13 14.5ZM17.42 13.06L14.93 15.55C14.78 15.7 14.59 15.77 14.4 15.77C14.21 15.77 14.02 15.7 13.87 15.55C13.58 15.26 13.58 14.78 13.87 14.49L16.36 12L13.87 9.5C13.58 9.21 13.58 8.73 13.87 8.44C14.16 8.15 14.64 8.15 14.93 8.44L17.42 10.93C18.01 11.52 18.01 12.48 17.42 13.06Z" fill="currentColor"></path>
+													</svg>
+													<div class="text">Code-Related Queries</div>
+													<div class="tooltip">
+														Issues involving code errors, execution problems, or debugging. e.g. "Why is my code not running?"
+													</div>
+													<div class="indicator"></div>
+													</div>
+												</label>
+												<label class="topic-option tooltip-container">
+													<input value="O" type="radio" name="topic-type">
+													<div class="topic-content">
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 16 16">
+														<path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+													</svg>
+													<div class="text">Other Queries</div>
+													<div class="tooltip">
+														General or miscellaneous questions that do not fit the other categories.
+													</div>
+													<div class="indicator"></div>
+													</div>
+												</label>
+												</div>
+											</div>
+
+											<div class="fquestion_title_form">
+												<div class="d-flex justify-content-between">
+													<span><label style="font-weight:400; font-size:16px;" for="question_title">Title</label></span>
+													<span><span id="type-counter-span" style="font-weight:300; font-size:14px;">0</span>/100</span>
+												</div>
+												<input required="" type="text" maxlength="100" name="question_title" id="question_title" oninput="countWords()" placeholder="Enter Question Title">
+											</div>
+											
+											<div class="question_description_form">
+												<label style="font-weight:400; font-size:16px;" for="question_description">Description</label>
+												<textarea style="width:100%;" name="question_description" id="question_description" placeholder="e.g. At 02:56, I didn't understand this part..." cols="80" rows="5"></textarea>
+												<span id="addNewQuestionError" style="color:red;"></span>
+											</div>
+
+											<input type="submit" value="Publish" class="publish-que-btn">
+
+										</form>
+
+									</div>
+
+									<div class="col-12" id="specificQuestionDiv" style="display:none;">
+										<p id="specificQuestionError" style="color:red;"></p>
+										<a onclick="backToQuestions()" class="backToQuestions text-custom-blue cursor-pointer">
+											<img height="22" width="22" data-src="https://s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/arrow-left-circle.svg" loading="lazy" src="https://dezyre.gumlet.io/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/arrow-left-circle.svg?w=1500&amp;dpr=1.0" class="gm-loaded gm-observing gm-observing-cb">
+											Back To All Questions
+										</a>
+										
+										<div id="main_specific_question_div">
+											<div class="question_title_content">
+												<div class="main_question_author_div">
+													<p class="author text-custom-black question-open-author-p font-14"> <span class="author_name text-custom-black"></span><span class="lecture_name text-custom-black"></span></p>
+													<div id="upvote_delete_edit_div" style="display: flex; flex-direction: column;"></div>
+												</div>
+												<div class="questionType">
+
+												</div>
+												<div class="question_title_div">
+													<p class="questionTitle" style="font-size:16px;margin-bottom: 16px;"></p>
+												</div>
+												<div class="question_content_div">
+													<p class="questionContent"></p>
+												</div>
+												<div class="main_question_upvote_div">
+
+												</div>
+											</div>
+											
+										</div>
+										
+
+										<div id="answersDiv">
+														
+											<div class="lds-ring">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+
+											<div class="d-flex" id="fetchOneQuestionUpvoteDivParent">
+												<div id="addNewAnswer">
+													<img height="18" data-src="https://s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/answer-this-que.svg" loading="lazy" src="https://dezyre.gumlet.io/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/answer-this-que.svg?w=1500&amp;dpr=1.0" class="gm-loaded gm-observing gm-observing-cb">
+													<button id="addNewAnswerBtn" class="blue-clr" onclick="addNewAnswer()">Add a new answer</button>
+												</div>
+												<div id="fetchOneQuestionUpvoteDiv">
+
+												</div>
+											</div>
+
+
+											<div class="col-12" id="addNewAnswerFormDiv" style="display:none;">
+												<form id="addNewAnswerForm">
+													
+													<div class="answer_description_form">
+														<!-- <label style="width:100%;" for="answer_description">Write your response</label> -->
+														<textarea name="answer_description" id="answer_description" placeholder="e.g. In my opinion..." cols="80" rows="5"></textarea>
+														<span id="addNewAnswerError" style="color:red;"></span>
+													</div>
+
+													<input class="publishAnswerBtn" type="submit" value="Publish answer">
+													<button id="cancelNewAnswer" value="Cancel">Cancel</button>
+
+												</form>
+
+											</div>
+
+
+
+											<p id="questionAnswersPretext" style="display:none;"><b>Answers (<span id="answersCount"></span>)</b></p>
+											
+											<div class="col-12">
+												<ul id="questionAnswersList" style="display:none;">
+												
+												
+
+												</ul>
+											</div>
+
+											<div id="showMoreAnswers" style="display:none;">
+												<button class="load-more-ans-btn" onclick="loadMoreAnswers()">Load More Answers</button>
+											</div>
+											
+
+											
+										</div>
+
+									</div>
+
+
+
+
+
+								</div>
+
+
+								<div role="tabpanel" class="tab-pane" id="downloadable-tab">
+
+
+									
+										<div class="row">
+											
+											<div class="col-md-12">
+												<div class="panel panel-info">
+													<div class="text-center panel-body" style="padding-top:0px;">
+														<div class="row course-material-parent">
+																														<div class="col-md-3 col-sm-4 col-xs-6 course-material-file-name">
+																																<a class="file-download-href" data-file-id="4543" data-file-name="Data.zip" href="https://s3.amazonaws.com/projex.dezyre.com/customer-churn-prediction-using-machine-learning-decision-trees/materials/Data.zip"> 
+																	<!-- <i class="file-downloadable-link fa fa-filezip-o fa-5x" aria-hidden="true"></i> -->
+																	<img class="file-downloadable-link download-file gm-loaded gm-observing gm-observing-cb" data-src="https://s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/zip.svg" onmouseover="this.src='//s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/active/zip.svg'" onmouseout="this.src='//s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/zip.svg'" loading="lazy" src="https://dezyre.gumlet.io/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/zip.svg?w=1500&amp;dpr=1.0">
+																	
+																	<br>
+																	<span class="file_name file-downloadable-link">Data.zip</span>
+																</a>
+															</div>
+																														<div class="col-md-3 col-sm-4 col-xs-6 course-material-file-name">
+																																<a class="file-download-href" data-file-id="4546" data-file-name="Solution Methodology" href="https://s3.amazonaws.com/projex.dezyre.com/customer-churn-prediction-using-machine-learning-decision-trees/materials/Solution%20Methodology.pdf"> 
+																	<!-- <i class="file-downloadable-link fa fa-filepdf-o fa-5x" aria-hidden="true"></i> -->
+																	<img class="file-downloadable-link download-file gm-loaded gm-observing gm-observing-cb" data-src="https://s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/pdf.svg" onmouseover="this.src='//s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/active/pdf.svg'" onmouseout="this.src='//s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/pdf.svg'" loading="lazy" src="https://dezyre.gumlet.io/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/pdf.svg?w=1500&amp;dpr=1.0">
+																	
+																	<br>
+																	<span class="file_name file-downloadable-link">Solution Methodology</span>
+																</a>
+															</div>
+																															<div class="clearfix visible-xs-block"></div>
+																														<div class="col-md-3 col-sm-4 col-xs-6 course-material-file-name">
+																																<a class="file-download-href" data-file-id="5395" data-file-name="modular_code.zip" href="https://s3.amazonaws.com/projex.dezyre.com/customer-churn-prediction-using-machine-learning-decision-trees/materials/modular_code.zip"> 
+																	<!-- <i class="file-downloadable-link fa fa-filezip-o fa-5x" aria-hidden="true"></i> -->
+																	<img class="file-downloadable-link download-file gm-loaded gm-observing gm-observing-cb" data-src="https://s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/zip.svg" onmouseover="this.src='//s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/active/zip.svg'" onmouseout="this.src='//s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/zip.svg'" loading="lazy" src="https://dezyre.gumlet.io/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/zip.svg?w=1500&amp;dpr=1.0">
+																	
+																	<br>
+																	<span class="file_name file-downloadable-link">modular_code.zip</span>
+																</a>
+															</div>
+																															<div class="clearfix visible-sm-block"></div>
+																														<div class="col-md-3 col-sm-4 col-xs-6 course-material-file-name">
+																																<a class="file-download-href" data-file-id="5396" data-file-name="Notebook.zip" href="https://s3.amazonaws.com/projex.dezyre.com/customer-churn-prediction-using-machine-learning-decision-trees/materials/Notebook.zip"> 
+																	<!-- <i class="file-downloadable-link fa fa-filezip-o fa-5x" aria-hidden="true"></i> -->
+																	<img class="file-downloadable-link download-file gm-loaded gm-observing gm-observing-cb" data-src="https://s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/zip.svg" onmouseover="this.src='//s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/active/zip.svg'" onmouseout="this.src='//s3.amazonaws.com/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/zip.svg'" loading="lazy" src="https://dezyre.gumlet.io/files.dezyre.com/ProjectPro2.0/new-hackerday-ui/downloadable/zip.svg?w=1500&amp;dpr=1.0">
+																	
+																	<br>
+																	<span class="file_name file-downloadable-link">Notebook.zip</span>
+																</a>
+															</div>
+																															<div class="clearfix visible-md-block visible-lg-block"></div>
+																															<div class="clearfix visible-xs-block"></div>
+																													</div>
+													</div>
+												</div>
+											</div> 
+										</div>
+
+										
+																			
+																	
+
+								</div>
+
+
+
+
+								
+
+
+
+							</div>
